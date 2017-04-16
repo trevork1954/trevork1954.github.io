@@ -1,0 +1,132 @@
+/* General styles */
+
+* {box-sizing: border-box}
+* {margin: 0; padding: 0}
+a {text-decoration: none;}
+
+html {font-family: Verdana, Arial, sans-serif}
+body {max-width: 820px; margin: auto; padding: 0;}
+noscript {color: red}
+article ul {padding-left: 1em}
+
+h3, h4 {padding-bottom: 0.5em}
+
+/* Header */
+
+header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.headerimage {float: left;}
+.headerimage img {display: block; margin: auto;}
+.eventdata, .map {float: left;}
+.showpic {float: right;}
+nav, .gallerynav {float: left; background-color: darkgreen;}
+.gallerynavitem {float: left}
+nav ul {list-style-type: none; padding: 1em;}
+.gallerynav {padding: 1em;}
+nav ul li, .gallerynavitem {text-align:center;}
+nav ul li a, .gallerynavitem a {color:white; text-decoration: none;}
+nav ul li a:hover, .gallerynavitem a:hover {background-color: lightgreen}
+.active {background-color: lightgreen;}
+.active a {color: darkgreen}
+
+/* phones */
+
+header {position: fixed; top: 0; height:140px; background-color:white}
+.galleryheader {height:220px; }
+.eventdetailsheader  {height:140px; width:100%}
+.headerimage {height:100px; width:100%; }
+.headerimage img {height:100px;}
+.showpic  {display: none}
+nav, .gallerynav {width:100%;}
+.gallerynav {margin-top: 2px}
+nav ul   {font-size: 0.7em}
+.gallerynav {font-size: 0.6em}
+nav ul li, .gallerynavitem {padding:0.2em; display: inline;}
+.gallerynavitem { border: 1px solid lightgreen; border-radius:20%; margin: 0.5em}
+article {padding: 160px 1em 1em 1em}
+.galleryarticle {padding-top: 260px}
+.eventdata, .map {float: left; width: 100%}
+.map, .map iframe {height:350px}
+.eventdetailsarticle {overflow:hidden}
+article p, article blockquote, article li , article td{font-size:0.75em}
+article table {border-collapse: collapse;}
+article td {padding: 0em 1em 1em 0em;}
+p.fire {font-size: 1em; color: red}
+footer {font-size: 0.6em}
+h3 {display:none}
+
+@media only screen and (min-width:334px) {
+  /* tablets */
+    nav ul {font-size: 0.8em; }
+    .gallerynav {font-size: 0.7em}
+    footer {font-size: 0.7em}
+}
+
+@media only screen and (min-width:501px) {
+  /* desktops and laptops */
+
+    article, .galleryarticle {padding-top: 1em }
+    article p, article blockquote {font-size:0.75em}
+    p.fire {font-size: 1em; color: red}
+
+    header{height:170px; position: static; overflow: hidden; padding:0.5em; background-color: lightgreen; }
+    .headerimage {width:65%; background-color: lightgreen;}
+    .galleryheader {height:260px; }
+    .headerimage img {height:150px; border: 5px solid darkgreen; border-radius:70% }
+    .eventdetailsheader  {height:165px}
+    .eventdetailsheader .headerimage {width:50%;}
+    .showpic {width:40%; display: block;}
+    .showpic img {display: block; margin: auto; height:150px;}
+    .eventdata { width:40%;}
+    .map {width:60%; height:400px;}
+    .map iframe {width: 100%; height:100%}
+    nav {width: 35%; height:auto; border:2px solid darkgreen; border-radius: 10%;}
+    nav ul li {display: block; padding:0.4em;}
+    .gallerynavitem {padding:0.4em;}
+    article {padding: 1em}
+    .eventdetailsarticle {overflow:hidden}
+    article p, article blockquote, article li, article td {font-size:1em}
+    h3 {display: block}
+    p.fire {font-size: 1.2em}
+}
+
+/* article */
+
+article {color: #333333;}
+article blockquote {text-align:center}
+article {background-color: lightgreen}
+article p {padding-top: 0.5em; padding-bottom: 0.5em}
+article a, article a:visited {color: blue}
+
+
+/* footer */
+
+footer {padding: 1em; clear: both; color: #333333}
+footer {color: white; background-color: DarkGreen; }
+.social {float: right; padding-bottom:2em}
+.social a   {font-size: 1.5em; font-weight: 900; color: white;}
+
+/* Galleries */
+
+.gallery a:hover {opacity:0.5}
+
+.gallery::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.galleryitem {
+    float: left;
+    width:120px; height:135px;
+    padding: 0;
+    margin: 15px 10px 15px 0px
+}
+
+.galleryitem p, .galleryitem p:visited {color: #333333}
+.galleryitem p {font-size: 0.7em; text-align: center}
+.galleryitem img {display: block; margin: auto; }
